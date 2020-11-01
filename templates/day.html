@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>feed - $date$</title>
+  <link rel="stylesheet" href="../../../css/textbook.css">
+</head>
+<body>
+    <div id="nav">
+        <div class="col" id="colleft">
+            $if(prev)$
+                <a href='../../../$prev$/index.html'>← $prev_text$</a>
+            $endif$
+        </div>
+        <div class="col" id="colmid"><h1><a href="../index.html">$date$</a></h1></div>
+        <div class="col" id="colright">
+            $if(next)$
+                <a href='../../../$next$/index.html'>$next_text$ →</a>
+            $endif$
+        </div>
+    </div>
+    <div id="feed">
+        $body$
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'RG';
+    src: url('../font/routed-gothic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Garamond';
+    src: url('../font/EBGaramond-Regular.ttf') format('truetype');
+}
+
+:root {
+    --background: #f4f4e8;
+    --post-background: #fffff8;
+    --font-color: #111;
+}
+
+body {
+    font-size: 24px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Garamond";
+    background-color: var(--background);
+    color: #111;
+    max-width: 820px;
+}
+
+a {
+    color: #2d7774;
+}
+
+#nav .col {
+    float: left;
+}
+
+#nav {
+    display: flex;
+}
+
+#nav div {
+    align-self: flex-end;
+}
+
+#nav #colleft {
+    width: 25%;
+}
+
+#nav #colmid {
+    width: 50%;
+    text-align: center;
+}
+
+#nav #colright {
+    width: 25%;
+    text-align: right;
+}
+
+#nav #colmid a {
+    color: #111;
+}
+
+.post {
+    color: var(--font-color);
+    background-color: var(--post-background);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.post .title {
+    margin-top: 12px;
+    font-family: "RG";
+    font-size: 30px;
+}
+
+h3 {
+    font-family: "RG";
+}
+
+h3 a {
+    color: #111;
+}
+
+img {
+    max-width: 80%;
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
